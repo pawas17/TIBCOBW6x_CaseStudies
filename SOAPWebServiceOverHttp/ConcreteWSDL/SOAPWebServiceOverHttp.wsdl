@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:ns="http://www.example.org/wsdl/1738481091630" xmlns:ns0="http://www.example.org/schema/1738481091784" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Process" targetNamespace="http://www.example.org/wsdl/1738481091630">
+  <wsdl:types>
+    <xsd:schema xmlns:tns="http://www.example.org/schema/1738481091784" elementFormDefault="unqualified" targetNamespace="http://www.example.org/schema/1738481091784">
+      <xsd:element name="AddRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Num1" type="xsd:string"/>
+            <xsd:element name="Num2" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AddResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Result" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="AddRequest">
+    <wsdl:part element="ns0:AddRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="AddResponse">
+    <wsdl:part element="ns0:AddResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:portType name="Process">
+    <wsdl:operation name="Add">
+      <wsdl:input message="ns:AddRequest" name="AddInput"/>
+      <wsdl:output message="ns:AddResponse" name="AddOutput"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SOAPServiceBinding" type="ns:Process">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Add">
+      <soap:operation soapAction="Add" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Process">
+    <wsdl:port binding="ns:SOAPServiceBinding" name="ProcessSOAP">
+      <soap:address location="http://localhost:9020/SOAPServiceBinding/process/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
