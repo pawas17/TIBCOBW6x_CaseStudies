@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/EmpID" xmlns:tns="http://www.example.org/EmpID" elementFormDefault="qualified">
+
+    <element name="EmpID" type="string"></element>
+
+    <complexType name="EmpIDType">
+    	<sequence>
+    		<element ref="tns:EmpID"></element>
+    	</sequence>
+    </complexType>
+
+
+    <element name="EMPID" type="tns:EmpIDType"></element>
+</schema>

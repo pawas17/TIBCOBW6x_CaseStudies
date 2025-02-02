@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: AppraisalSystem Module
-Bundle-SymbolicName: AppraisalSystem
+Bundle-Name: SOAPWebServiceOverHttp Module
+Bundle-SymbolicName: SOAPWebServiceOverHttp
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: TIBCO Software Inc.
 TIBCO-BW-Version: 6.2.2 V18 2015-07-14
@@ -10,9 +10,5 @@ TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
 TIBCO-BW-JobSharedVariables: META-INF/module.jsv
 TIBCO-BW-ApplicationModule: META-INF/module.bwm
 Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",
- com.tibco.bw.palette; filter:="(name=bw.jdbc)",
- com.tibco.bw.palette; filter:="(name=bw.file)",
- com.tibco.bw.palette; filter:="(name=bw.xml)",
- com.tibco.bw.palette; filter:="(name=bw.parse)",
- com.tibco.bw.sharedresource.model; filter:="(name=bw.dataformat)",
- com.tibco.bw.sharedresource.model; filter:="(name=bw.jdbc)"
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.httpconnector)",
+ com.tibco.bw.binding.model; filter:="(name=bw.soap)"

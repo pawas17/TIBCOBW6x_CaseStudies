@@ -9,6 +9,9 @@
   <sca:property xmi:id="_7hFQ0J81Ee-m2tx9ox1XZg" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_7hJiQJ81Ee-m2tx9ox1XZg" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_7hOawJ81Ee-m2tx9ox1XZg" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dSlSsNmdEe-QCqlHzNpFjA" name="/AppraisalSystem/EmployeeInputFileName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_ilGVMNmdEe-QCqlHzNpFjA" name="/AppraisalSystem/OutputFileName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_fyGXMNmfEe-QCqlHzNpFjA" name="/AppraisalSystem/ProjectInputFileName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:component xmi:id="_44kWcJ81Ee-m2tx9ox1XZg" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_44kWcZ81Ee-m2tx9ox1XZg" processName="appraisalsystem.Process"/>
   </sca:component>

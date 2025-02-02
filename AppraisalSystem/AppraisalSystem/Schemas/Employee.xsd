@@ -14,6 +14,31 @@
     		<element ref="tns:empid"></element>
     		<element ref="tns:empname"></element>
     		<element ref="tns:salary"></element>
+    		<element ref="tns:projectdetails" maxOccurs="unbounded" minOccurs="0"></element>
     	</sequence>
     </complexType>
+
+    <complexType name="projectdetailstype">
+    	<sequence>
+    		<element ref="tns:projectid"></element>
+    		<element ref="tns:projectname"></element>
+    		<element ref="tns:profitearned"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="projectname" type="string"></element>
+
+    <element name="projectid" type="integer"></element>
+
+    <element name="profitearned" type="decimal"></element>
+
+    <element name="projectdetails" type="tns:projectdetailstype"></element>
+
+    <complexType name="StaffType">
+    	<sequence>
+    		<element ref="tns:empdetails"></element>
+    	</sequence>
+    </complexType>
+    
+    <element name="Staff" type="tns:StaffType"></element>
 </schema>

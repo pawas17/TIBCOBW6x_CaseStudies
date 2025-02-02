@@ -73,5 +73,29 @@
 			<type>String</type>
 			<isOverride>false</isOverride>
 		</globalVariable>
+		<globalVariable>
+			<name>//AppraisalSystem///AppraisalSystem/OutputFileName</name>
+			<value>C:\TIBCO_BW6-10Nov\Output\AppraisalSystem\AppraisalSystemOutput.xml</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
+		<globalVariable>
+			<name>//AppraisalSystem///AppraisalSystem/EmployeeInputFileName</name>
+			<value>C:\TIBCO_BW6-10Nov\Input\AppraisalSystem\Topper.txt</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
+		<globalVariable>
+			<name>//AppraisalSystem///AppraisalSystem/ProjectInputFileName</name>
+			<value>C:\TIBCO_BW6-10Nov\Input\AppraisalSystem\Project.csv</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
 	</globalVariables>
 </repository>
