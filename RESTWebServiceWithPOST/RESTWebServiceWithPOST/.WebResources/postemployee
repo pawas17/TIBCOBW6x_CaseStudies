@@ -1,0 +1,101 @@
+{
+  "apiVersion" : "4.0",
+  "swaggerVersion" : "1.2",
+  "basePath" : "http://localhost:9235",
+  "resourcePath" : "/postemployee",
+  "apis" : [ {
+    "path" : "/postemployee/",
+    "description" : "",
+    "operations" : [ {
+      "method" : "POST",
+      "nickname" : "postPostemployee",
+      "responseClass" : "Employee",
+      "parameters" : [ {
+        "paramType" : "body",
+        "type" : "integer",
+        "required" : "true",
+        "allowMultiple" : "false"
+      } ],
+      "summary" : null,
+      "notes" : null,
+      "responseMessages" : [ {
+        "code" : "200",
+        "message" : "OK"
+      }, {
+        "code" : "201",
+        "message" : "Created"
+      }, {
+        "code" : "202",
+        "message" : "Accepted"
+      }, {
+        "code" : "204",
+        "message" : "No Content"
+      }, {
+        "code" : "301",
+        "message" : "Moved Permanently"
+      }, {
+        "code" : "303",
+        "message" : "See Other"
+      }, {
+        "code" : "304",
+        "message" : "Not Modified"
+      }, {
+        "code" : "307",
+        "message" : "Temporary Redirect"
+      }, {
+        "code" : "400",
+        "message" : "Bad Request"
+      }, {
+        "code" : "401",
+        "message" : "Unauthorized"
+      }, {
+        "code" : "403",
+        "message" : "Forbidden"
+      }, {
+        "code" : "404",
+        "message" : "Not Found"
+      }, {
+        "code" : "406",
+        "message" : "Not Acceptable"
+      }, {
+        "code" : "409",
+        "message" : "Conflict"
+      }, {
+        "code" : "410",
+        "message" : "Gone"
+      }, {
+        "code" : "412",
+        "message" : "Precondition Failed"
+      }, {
+        "code" : "415",
+        "message" : "Unsupported Media Type"
+      }, {
+        "code" : "500",
+        "message" : "Internal Server Error"
+      }, {
+        "code" : "503",
+        "message" : "Service Unavailable"
+      } ],
+      "consumes" : [ "application/json" ],
+      "produces" : [ "application/json" ]
+    } ]
+  } ],
+  "models" : {
+    "Employee" : {
+      "id" : "Employee",
+      "required" : [ "EmpID", "EmpName", "Salary" ],
+      "properties" : {
+        "EmpID" : {
+          "type" : "integer"
+        },
+        "EmpName" : {
+          "type" : "string"
+        },
+        "Salary" : {
+          "type" : "integer"
+        }
+      }
+    }
+  },
+  "authorizations" : { }
+}

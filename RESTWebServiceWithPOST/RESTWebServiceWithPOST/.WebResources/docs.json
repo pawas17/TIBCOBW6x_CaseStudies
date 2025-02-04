@@ -1,0 +1,10 @@
+{
+  "apiVersion" : "4.0",
+  "swaggerVersion" : "1.2",
+  "basePath" : "http://localhost:7777/RESTWebServiceWithPOST",
+  "apis" : [ {
+    "path" : "/postemployee",
+    "description" : "Summary about the new REST service."
+  } ],
+  "authorizations" : { }
+}

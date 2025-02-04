@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_4I6l8OLzEe-4JMlNuMNBzw" targetNamespace="http://tns.tibco.com/bw/composite/RESTWebServiceWithPOST" name="RESTWebServiceWithPOST" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_aM3McuL0Ee-4JMlNuMNBzw" name="Postemployee" promote="ComponentProcess/Postemployee">
+    <sca:interface.wsdl xmi:id="_aM3MduL0Ee-4JMlNuMNBzw" interface="http://www.example.org/Employee/REST/1738672482731#wsdl.interface(Postemployee)" scaext:wsdlLocation="../Service%20Descriptors/postemployee.wsdl"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_aM3Md-L0Ee-4JMlNuMNBzw" name="RestService" path="/postemployee" docBasePath="http://localhost:7777/RESTWebServiceWithPOST" docResourcePath="postemployee" connector="restwebservicewithpost.postemployee" structuredData="true">
+      <operation xmi:id="_aM3MeOL0Ee-4JMlNuMNBzw" operationName="post" nickname="postPostemployee" httpMethod="POST" statusLines="_5q0nIOL_Ee-4JMlNuMNBzw _5wCeUOL_Ee-4JMlNuMNBzw _5zdlwOL_Ee-4JMlNuMNBzw _52S3UOL_Ee-4JMlNuMNBzw _54YiAOL_Ee-4JMlNuMNBzw _56KqsOL_Ee-4JMlNuMNBzw _59S3MOL_Ee-4JMlNuMNBzw _5-ysAOL_Ee-4JMlNuMNBzw _6AR5wOL_Ee-4JMlNuMNBzw _6BnWgOL_Ee-4JMlNuMNBzw _6C9aUOL_Ee-4JMlNuMNBzw _6EcoEOL_Ee-4JMlNuMNBzw _6G--sOL_Ee-4JMlNuMNBzw _6MTjkOL_Ee-4JMlNuMNBzw _6Nt40OL_Ee-4JMlNuMNBzw _6PbwEOL_Ee-4JMlNuMNBzw _6Q4hkOL_Ee-4JMlNuMNBzw _660PYOL_Ee-4JMlNuMNBzw _680agOL_Ee-4JMlNuMNBzw"/>
+      <parameters xmi:id="_aOzGIOL0Ee-4JMlNuMNBzw"/>
+      <clientFormat>JSON</clientFormat>
+      <statusLines xmi:id="_5q0nIOL_Ee-4JMlNuMNBzw" statusCode="200" reasonPhrase="OK"/>
+      <statusLines xmi:id="_5wCeUOL_Ee-4JMlNuMNBzw" statusCode="201" reasonPhrase="Created"/>
+      <statusLines xmi:id="_5zdlwOL_Ee-4JMlNuMNBzw" statusCode="202" reasonPhrase="Accepted"/>
+      <statusLines xmi:id="_52S3UOL_Ee-4JMlNuMNBzw" statusCode="204" reasonPhrase="No Content"/>
+      <statusLines xmi:id="_54YiAOL_Ee-4JMlNuMNBzw" statusCode="301" reasonPhrase="Moved Permanently"/>
+      <statusLines xmi:id="_56KqsOL_Ee-4JMlNuMNBzw" statusCode="303" reasonPhrase="See Other"/>
+      <statusLines xmi:id="_59S3MOL_Ee-4JMlNuMNBzw" statusCode="304" reasonPhrase="Not Modified"/>
+      <statusLines xmi:id="_5-ysAOL_Ee-4JMlNuMNBzw" statusCode="307" reasonPhrase="Temporary Redirect"/>
+      <statusLines xmi:id="_6AR5wOL_Ee-4JMlNuMNBzw" statusCode="400" reasonPhrase="Bad Request"/>
+      <statusLines xmi:id="_6BnWgOL_Ee-4JMlNuMNBzw" statusCode="401" reasonPhrase="Unauthorized"/>
+      <statusLines xmi:id="_6C9aUOL_Ee-4JMlNuMNBzw" statusCode="403" reasonPhrase="Forbidden"/>
+      <statusLines xmi:id="_6EcoEOL_Ee-4JMlNuMNBzw" statusCode="404" reasonPhrase="Not Found"/>
+      <statusLines xmi:id="_6G--sOL_Ee-4JMlNuMNBzw" statusCode="406" reasonPhrase="Not Acceptable"/>
+      <statusLines xmi:id="_6MTjkOL_Ee-4JMlNuMNBzw" statusCode="409" reasonPhrase="Conflict"/>
+      <statusLines xmi:id="_6Nt40OL_Ee-4JMlNuMNBzw" statusCode="410" reasonPhrase="Gone"/>
+      <statusLines xmi:id="_6PbwEOL_Ee-4JMlNuMNBzw" statusCode="412" reasonPhrase="Precondition Failed"/>
+      <statusLines xmi:id="_6Q4hkOL_Ee-4JMlNuMNBzw" statusCode="415" reasonPhrase="Unsupported Media Type"/>
+      <statusLines xmi:id="_660PYOL_Ee-4JMlNuMNBzw" statusCode="500" reasonPhrase="Internal Server Error"/>
+      <statusLines xmi:id="_680agOL_Ee-4JMlNuMNBzw" statusCode="503" reasonPhrase="Service Unavailable"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_aOHwsOL0Ee-4JMlNuMNBzw" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_4h2DUOLzEe-4JMlNuMNBzw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_4ih_0OLzEe-4JMlNuMNBzw" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_4irw0OLzEe-4JMlNuMNBzw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_4irw0eLzEe-4JMlNuMNBzw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_4iyegOLzEe-4JMlNuMNBzw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_4iyegeLzEe-4JMlNuMNBzw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_4i1h0OLzEe-4JMlNuMNBzw" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_4i1h0eLzEe-4JMlNuMNBzw" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_4i1h0uLzEe-4JMlNuMNBzw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_4Vd0MOLzEe-4JMlNuMNBzw" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_4Vd0MeLzEe-4JMlNuMNBzw" processName="restwebservicewithpost.Process"/>
+    <sca:service xmi:id="_aM3McOL0Ee-4JMlNuMNBzw" name="Postemployee">
+      <sca:interface.wsdl xmi:id="_aM3MceL0Ee-4JMlNuMNBzw" interface="http://www.example.org/Employee/REST/1738672482731#wsdl.interface(Postemployee)" scaext:wsdlLocation="../Service%20Descriptors/postemployee.wsdl"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

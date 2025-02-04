@@ -1,0 +1,44 @@
+{
+  "apiVersion" : "4.0",
+  "swaggerVersion" : "1.2",
+  "basePath" : "http://localhost:9320",
+  "resourcePath" : "/Process",
+  "apis" : [ {
+    "path" : "/process/",
+    "description" : "",
+    "operations" : [ {
+      "method" : "POST",
+      "nickname" : "createItem",
+      "responseClass" : "Employee",
+      "parameters" : [ {
+        "paramType" : "body",
+        "type" : "integer",
+        "required" : "true",
+        "allowMultiple" : "false"
+      } ],
+      "summary" : null,
+      "notes" : "Create a new item",
+      "responseMessages" : [ ],
+      "consumes" : [ "application/json" ],
+      "produces" : [ "application/json" ]
+    } ]
+  } ],
+  "models" : {
+    "Employee" : {
+      "id" : "Employee",
+      "required" : [ "EmpID", "EmpName", "Salary" ],
+      "properties" : {
+        "EmpID" : {
+          "type" : "integer"
+        },
+        "EmpName" : {
+          "type" : "string"
+        },
+        "Salary" : {
+          "type" : "integer"
+        }
+      }
+    }
+  },
+  "authorizations" : { }
+}
