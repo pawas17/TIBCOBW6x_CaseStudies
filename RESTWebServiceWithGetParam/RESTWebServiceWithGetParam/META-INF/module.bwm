@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_TK3ioOLvEe-4JMlNuMNBzw" targetNamespace="http://tns.tibco.com/bw/composite/RESTWebServiceWithGetParam" name="RESTWebServiceWithGetParam" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_s2uc0uLvEe-4JMlNuMNBzw" name="Employee" promote="ComponentProcess/Employee">
+    <sca:interface.wsdl xmi:id="_s2uc1uLvEe-4JMlNuMNBzw" interface="http://www.example.org/Employee/REST/1738670453857#wsdl.interface(Employee)" scaext:wsdlLocation="../Service%20Descriptors/employee.wsdl"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_s2uc1-LvEe-4JMlNuMNBzw" name="RestService" path="/employee/{empid}" docBasePath="http://localhost:7777/RESTWebServiceWithGetParam" docResourcePath="employee" connector="restwebservicewithgetparam.employee" structuredData="true">
+      <operation xmi:id="_s2uc2OLvEe-4JMlNuMNBzw" operationName="get" nickname="getEmployee" httpMethod="GET"/>
+      <parameters xmi:id="_s6Q5AOLvEe-4JMlNuMNBzw">
+        <parameterMapping xmi:id="_s91xcOLvEe-4JMlNuMNBzw" parameterName="empid" parameterType="Path"/>
+      </parameters>
+      <clientFormat>JSON</clientFormat>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_s3BXwOLvEe-4JMlNuMNBzw" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_TlKR8OLvEe-4JMlNuMNBzw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_TlsdcOLvEe-4JMlNuMNBzw" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Tl21gOLvEe-4JMlNuMNBzw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Tl7uAOLvEe-4JMlNuMNBzw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_TmFfAOLvEe-4JMlNuMNBzw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_TmMzwOLvEe-4JMlNuMNBzw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_TmRsQOLvEe-4JMlNuMNBzw" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_TmWkwOLvEe-4JMlNuMNBzw" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_TmfHoOLvEe-4JMlNuMNBzw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_TXMucOLvEe-4JMlNuMNBzw" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_TXMuceLvEe-4JMlNuMNBzw" processName="restwebservicewithgetparam.Process"/>
+    <sca:service xmi:id="_s2uc0OLvEe-4JMlNuMNBzw" name="Employee">
+      <sca:interface.wsdl xmi:id="_s2uc0eLvEe-4JMlNuMNBzw" interface="http://www.example.org/Employee/REST/1738670453857#wsdl.interface(Employee)" scaext:wsdlLocation="../Service%20Descriptors/employee.wsdl"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

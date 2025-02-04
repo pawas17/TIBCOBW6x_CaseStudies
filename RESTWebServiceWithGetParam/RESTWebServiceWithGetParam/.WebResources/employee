@@ -1,0 +1,45 @@
+{
+  "apiVersion" : "4.0",
+  "swaggerVersion" : "1.2",
+  "basePath" : "http://localhost:9233",
+  "resourcePath" : "/employee",
+  "apis" : [ {
+    "path" : "/employee/{empid}/",
+    "description" : "",
+    "operations" : [ {
+      "method" : "GET",
+      "nickname" : "getEmployee",
+      "responseClass" : "Employee",
+      "parameters" : [ {
+        "paramType" : "path",
+        "name" : "empid",
+        "type" : "string",
+        "required" : "true",
+        "allowMultiple" : "false"
+      } ],
+      "summary" : null,
+      "notes" : null,
+      "responseMessages" : [ ],
+      "consumes" : [ "application/json" ],
+      "produces" : [ "application/json" ]
+    } ]
+  } ],
+  "models" : {
+    "Employee" : {
+      "id" : "Employee",
+      "required" : [ "EmpID", "EmpName", "Salary" ],
+      "properties" : {
+        "EmpID" : {
+          "type" : "integer"
+        },
+        "EmpName" : {
+          "type" : "string"
+        },
+        "Salary" : {
+          "type" : "integer"
+        }
+      }
+    }
+  },
+  "authorizations" : { }
+}

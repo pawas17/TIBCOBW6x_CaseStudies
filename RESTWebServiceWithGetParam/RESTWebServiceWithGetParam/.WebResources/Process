@@ -1,0 +1,39 @@
+{
+  "apiVersion" : "4.0",
+  "swaggerVersion" : "1.2",
+  "basePath" : "http://localhost:9320",
+  "resourcePath" : "/Process",
+  "apis" : [ {
+    "path" : "/process/",
+    "description" : "",
+    "operations" : [ {
+      "method" : "GET",
+      "nickname" : "getItem",
+      "responseClass" : "Employee",
+      "parameters" : [ ],
+      "summary" : null,
+      "notes" : "Get an item",
+      "responseMessages" : [ ],
+      "consumes" : [ "application/json" ],
+      "produces" : [ "application/json" ]
+    } ]
+  } ],
+  "models" : {
+    "Employee" : {
+      "id" : "Employee",
+      "required" : [ "EmpID", "EmpName", "Salary" ],
+      "properties" : {
+        "EmpID" : {
+          "type" : "integer"
+        },
+        "EmpName" : {
+          "type" : "string"
+        },
+        "Salary" : {
+          "type" : "integer"
+        }
+      }
+    }
+  },
+  "authorizations" : { }
+}
